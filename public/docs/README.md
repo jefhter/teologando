@@ -1,10 +1,12 @@
-## Estrutura de Pastas
+## Estrutura das pastas
 
-public/
-├── assets/
-│   ├── css/
-│   ├── data/
-│   └── js/
-├── components/
-├── docs/
-└── pages/
+```
+    public/
+    ├── assets/
+    │   ├── css/
+    │   ├── data/
+    │   └── js/
+    ├── components/
+    ├── docs/
+    └── pages/
+```
