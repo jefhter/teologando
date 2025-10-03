@@ -1,0 +1,43 @@
+header {
+    background-color: #f1e9d5; /* Cor clara do seu projeto */
+    border-bottom: 1px solid #4e3629; /* Linha sutil para separar do corpo */
+    padding: 15px 20px;
+}
+
+.header-content {
+    /* Ativa o Flexbox no contêiner principal */
+    display: flex; 
+    /* Alinha o logo e o menu nas extremidades */
+    justify-content: space-between; 
+    /* Centraliza verticalmente o logo e o menu */
+    align-items: center; 
+    
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4e3629; 
+}
+
+.logo {
+    height: 40px; /* Ajusta o tamanho do logo */
+    margin-right: 10px;
+}
+
+.main-nav ul {
+    display: flex; /* Flexbox para alinhar os links horizontalmente */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #4e3629;
+    padding: 0 15px;
+    font-weight: bold;
+}
