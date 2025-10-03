@@ -1,35 +1,54 @@
-/* Estilos do Rodapé */
+/* Variáveis de Cores (Relembrando) */
+:root {
+    --color-background-light: #f1e9d5; /* Creme/Papel */
+    --color-text-dark: #4e3629;       /* Marrom-Escuro (Tinta) */
+    /* ... outras cores ... */
+}
+
+/* 1. Estilos do FOOTER (Revertido para Fundo Escuro) */
 footer {
-    /* Define o fundo do footer como claro */
-    background-color: var(--color-background-light); 
-    /* Define a cor de texto padrão do footer como escura */
-    color: var(--color-text-dark); 
+    /* Fundo Escuro para todo o footer */
+    background-color: var(--color-text-dark); 
+    /* Cor do texto geral (p, a, li, etc.) dentro do footer é clara */
+    color: var(--color-background-light); 
     
     padding: 40px 0;
     font-size: 0.9em;
 }
 
-/* 1. Estilizando o Título <h3> no Rodapé */
-/* Garante que o <h3>, que contém o "Teologando", use a cor escura do texto */
+/* 2. Destaque Específico para o Título <h3> (Teologando) */
 footer h3 {
+    /* Garante que o fundo do bloco seja apenas do tamanho do texto */
+    display: inline-block; 
+    
+    /* Aplica o fundo de destaque claro */
+    background-color: var(--color-background-light); 
+    
+    /* Cor do texto DENTRO do destaque será a cor escura */
     color: var(--color-text-dark); 
-    font-family: 'Georgia', serif; 
-    /* Remove o espaçamento extra que os h3 globais podem ter */
+    
+    /* Adiciona um "respiro" ao redor do texto no destaque */
+    padding: 5px 10px; 
+    
+    /* Deixa as bordas ligeiramente arredondadas, se desejar */
+    border-radius: 3px; 
+    
+    /* Reseta a margem global dos h3, se necessário */
     margin-bottom: 0.5em; 
 }
 
-/* 2. Estilizando links e parágrafos dentro do footer */
+/* 3. Estilizando links e parágrafos dentro do footer */
 footer p, footer a, footer h4 {
-    /* Garante que outros textos e links usem a cor escura */
-    color: var(--color-text-dark); 
+    /* Mantém a cor clara original do footer */
+    color: var(--color-background-light); 
     text-decoration: none;
 }
 
-/* 3. Barra de Copyright */
+/* 4. Barra de Copyright */
 .footer-copyright {
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
-    /* Linha de separação escura */
-    border-top: 1px solid var(--color-text-dark); 
+    /* Linha de separação clara */
+    border-top: 1px solid rgba(241, 233, 213, 0.2); 
 }

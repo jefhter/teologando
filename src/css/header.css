@@ -12,7 +12,7 @@ header {
     /* Centraliza verticalmente o logo e o menu */
     align-items: center; 
     
-    max-width: 1200px; /* Limita a largura do conteúdo */
+    max-width: auto;
     margin: 0 auto;
 }
 
