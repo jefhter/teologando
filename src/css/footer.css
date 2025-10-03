@@ -1,54 +1,60 @@
-/* Variáveis de Cores (Relembrando) */
-:root {
-    --color-background-light: #f1e9d5; /* Creme/Papel */
-    --color-text-dark: #4e3629;       /* Marrom-Escuro (Tinta) */
-    /* ... outras cores ... */
-}
-
-/* 1. Estilos do FOOTER (Revertido para Fundo Escuro) */
+/* AJUSTES GERAIS DO FOOTER */
 footer {
-    /* Fundo Escuro para todo o footer */
     background-color: var(--color-text-dark); 
-    /* Cor do texto geral (p, a, li, etc.) dentro do footer é clara */
     color: var(--color-background-light); 
-    
     padding: 40px 0;
     font-size: 0.9em;
 }
 
-/* 2. Destaque Específico para o Título <h3> (Teologando) */
+/* 1. ATIVAÇÃO DO FLEXBOX */
+.footer-container {
+    /* Torna os elementos internos flexíveis (lado a lado) */
+    display: flex; 
+    
+    /* Centraliza o contêiner e limita a largura */
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    /* Distribui o espaço igualmente entre as colunas */
+    justify-content: space-between; 
+}
+
+/* 2. ESTILOS DE CADA COLUNA */
+.footer-col {
+    /* Dá um respiro entre as colunas */
+    margin-right: 20px; 
+    
+    /* Garante que o texto se alinhe à esquerda dentro da coluna */
+    text-align: left; 
+    
+    /* Permite que as colunas se ajustem, mas com um mínimo */
+    flex-grow: 1; 
+}
+
+/* 3. LISTAS DE NAVEGAÇÃO */
+.footer-col ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin-top: 5px;
+}
+
+.footer-col li {
+    margin-bottom: 5px;
+}
+
+/* 4. Destaque do Teologando (mantido) */
 footer h3 {
-    /* Garante que o fundo do bloco seja apenas do tamanho do texto */
-    display: inline-block; 
-    
-    /* Aplica o fundo de destaque claro */
-    background-color: var(--color-background-light); 
-    
-    /* Cor do texto DENTRO do destaque será a cor escura */
-    color: var(--color-text-dark); 
-    
-    /* Adiciona um "respiro" ao redor do texto no destaque */
-    padding: 5px 10px; 
-    
-    /* Deixa as bordas ligeiramente arredondadas, se desejar */
-    border-radius: 3px; 
-    
-    /* Reseta a margem global dos h3, se necessário */
-    margin-bottom: 0.5em; 
+    display: inline-block;
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px; /* Adiciona um espaço para separar do texto abaixo */
 }
 
-/* 3. Estilizando links e parágrafos dentro do footer */
-footer p, footer a, footer h4 {
-    /* Mantém a cor clara original do footer */
-    color: var(--color-background-light); 
-    text-decoration: none;
-}
-
-/* 4. Barra de Copyright */
-.footer-copyright {
-    text-align: center;
-    padding-top: 20px;
-    margin-top: 20px;
-    /* Linha de separação clara */
-    border-top: 1px solid rgba(241, 233, 213, 0.2); 
+/* 5. Estiliza os títulos das colunas (Navegue e Jurídico) */
+footer h4 {
+    color: var(--color-background-light); /* Cor clara para títulos de colunas no fundo escuro */
+    margin-bottom: 10px;
 }
