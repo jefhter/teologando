@@ -1,37 +1,35 @@
+/* Estilos do Rodapé */
 footer {
-    /* Cor escura que você escolheu */
-    background-color: #4e3629; 
-    /* Cor clara para o texto */
-    color: #f1e9d5; 
+    /* Define o fundo do footer como claro */
+    background-color: var(--color-background-light); 
+    /* Define a cor de texto padrão do footer como escura */
+    color: var(--color-text-dark); 
+    
     padding: 40px 0;
     font-size: 0.9em;
 }
 
-.footer-container {
-    /* Define o Flexbox para organizar as colunas */
-    display: flex;
-    justify-content: space-between; /* Espaçamento entre as colunas */
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto;
-    padding: 0 20px;
+/* 1. Estilizando o Título <h3> no Rodapé */
+/* Garante que o <h3>, que contém o "Teologando", use a cor escura do texto */
+footer h3 {
+    color: var(--color-text-dark); 
+    font-family: 'Georgia', serif; 
+    /* Remove o espaçamento extra que os h3 globais podem ter */
+    margin-bottom: 0.5em; 
 }
 
-.footer-col {
-    width: 30%; /* Define a largura das colunas */
-    margin-bottom: 20px;
-}
-
-/* Estiliza os links */
-footer a {
-    color: #f1e9d5;
+/* 2. Estilizando links e parágrafos dentro do footer */
+footer p, footer a, footer h4 {
+    /* Garante que outros textos e links usem a cor escura */
+    color: var(--color-text-dark); 
     text-decoration: none;
-    line-height: 2;
 }
 
-/* Estiliza a barra de copyright */
+/* 3. Barra de Copyright */
 .footer-copyright {
     text-align: center;
     padding-top: 20px;
     margin-top: 20px;
-    border-top: 1px solid rgba(241, 233, 213, 0.2); /* Linha sutil de separação */
+    /* Linha de separação escura */
+    border-top: 1px solid var(--color-text-dark); 
 }
