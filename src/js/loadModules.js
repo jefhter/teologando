@@ -28,6 +28,6 @@ function loadComponent(elementId, filePath) {
 
 // 4. Carrega os componentes nos seus respectivos IDs
 document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('header-placeholder', '/src/components/header.html');
-    loadComponent('footer-placeholder', '/src/components/footer.html');
+    loadComponent('header-placeholder', 'https://jefhter.github.io/teologando//src/components/header.html');
+    loadComponent('footer-placeholder', 'https://jefhter.github.io/teologando//src/components/footer.html');
 });
