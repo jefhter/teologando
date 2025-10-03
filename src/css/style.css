@@ -1,0 +1,49 @@
+/* VARIÁVEIS DO PROJETO */
+:root {
+    --color-background-light: #f1e9d5; /* Fundo/Creme/Papel */
+    --color-text-dark: #4e3629;       /* Marrom-Escuro (Tinta) */
+    --color-accent: #6f4c3d;          /* Tom de destaque para links */
+}
+
+/* 1. RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. ESTILOS GLOBAIS DO CORPO */
+body {
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    font-family: 'Lato', sans-serif; /* Fonte limpa para leitura */
+    line-height: 1.6; 
+    font-size: 1.1rem;
+}
+
+/* 3. TIPOGRAFIA E TÍTULOS (Estilo Editorial) */
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Fonte com serifa para toque clássico */
+    color: var(--color-text-dark);
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* 4. LAYOUT PRINCIPAL E LINKS */
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--color-text-dark);
+    text-decoration: underline;
+}
