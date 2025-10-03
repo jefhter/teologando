@@ -34,10 +34,8 @@ h1, h2, h3 {
 .container {
     max-width: 900px;
     width: 90%;
-    margin: 0 auto;
+    margin: 10%;
     padding: 20px 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 a {
