@@ -32,10 +32,11 @@ h1, h2, h3 {
 
 /* 4. LAYOUT PRINCIPAL E LINKS */
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     width: 90%;
-    margin: 10%;
+    margin: 0 auto;
     padding: 20px 0;
+    align-items: center;
 }
 
 a {
@@ -46,4 +47,56 @@ a {
 a:hover {
     color: var(--color-text-dark);
     text-decoration: underline;
+}
+
+.welcome-section.section-padding {
+    padding: 30px;
+}   
+
+/* src/css/style.css (Adicionar ao final) */
+
+/* Estilização para a grade de resumo (Ortodoxia e Ortopraxia) */
+.summary-cards-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Espaço entre os cards */
+    margin-bottom: 40px;
+}
+
+.summary-card {
+    flex: 1; /* Permite que os cards cresçam igualmente */
+    padding: 30px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 8px;
+    background-color: var(--color-background-light); /* Fundo creme */
+}
+.summary-card h3 {
+    color: var(--color-text-dark);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.summary-card a {
+    font-weight: bold;
+    color: var(--color-accent); /* Cor de destaque */
+}
+
+/* Estilo para o Destaque do Último Post */
+.post-highlight-card {
+    border-left: 5px solid var(--color-accent); /* Linha vertical de destaque */
+    padding: 20px 20px 20px 30px;
+    background-color: var(--color-light-gray); /* Fundo cinza claro sutil */
+    border-radius: 0 8px 8px 0;
+}
+.post-excerpt {
+    font-style: italic;
+    color: var(--color-secondary-text);
+}
+.all-posts-link {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.latest-post.section-padding{
+    margin-left: 60px;
 }
