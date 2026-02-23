@@ -1,3 +1,5 @@
+node_modules/
+src/js/node_modules/
 .env
 *.json
 !package.json
