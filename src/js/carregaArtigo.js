@@ -1,7 +1,9 @@
+// NAO UTILIZADA AINDA
+
 async function carregarArtigo(nome) {
     try {
         // O fetch busca o arquivo que o Node.js gerou
-        const response = await fetch('../../articles/${nome}.html');
+        const response = await fetch('../assets/articles/${nome}.html');
         const htmlTexto = await response.text();
 
         // Injeta o HTML dentro da tag article

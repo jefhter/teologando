@@ -7,7 +7,7 @@ const path = require('path');
 const KEY_FILE_PATH = path.join(process.env.GOOGLE_KEYFILE);
 const SCOPES = ['https://www.googleapis.com/auth/drive.readonly'];
 const FOLDER_ID = process.env.GOOGLE_FOLDER_ID;
-const PASTA_DESTINO = path.join(__dirname, '../../docs/')
+const PASTA_DESTINO = path.join(__dirname, '../assets/docs/')
 
 // Autenticação
 const auth = new google.auth.GoogleAuth({
