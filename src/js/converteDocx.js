@@ -10,4 +10,4 @@ async function converter() {
     fs.writeFileSync(caminhoHtml, result.value); 
 }
 
-converter()
+module.exports = { converter };

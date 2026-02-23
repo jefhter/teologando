@@ -60,5 +60,4 @@ async function baixarUltimoDocx() {
     }
 }
 
-// Executa a função
-baixarUltimoDocx();
+module.exports = { baixarUltimoDocx };
