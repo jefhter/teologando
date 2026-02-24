@@ -45,8 +45,8 @@ a {
     transition: color 0.3s ease;
 }
 a:hover {
-    color: var(--color-text-dark);
-    text-decoration: underline;
+    color: var(--color-accent);
+    text-decoration: none;
 }
 
 .welcome-section.section-padding {
@@ -95,8 +95,23 @@ a:hover {
     text-align: center;
     margin-top: 30px;
     font-weight: bold;
+    display: flex;
+    box-sizing: border-box;
 }
 
 .latest-post.section-padding{
     margin-left: 60px;
+}
+
+section article h3 a{
+    background-color: var(--color-text-dark);
+    color:var(--color-background-light);
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+a.red-more {
+    text-decoration: underline;
 }

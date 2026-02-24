@@ -23,7 +23,8 @@ footer {
 /* 2. ESTILOS DE CADA COLUNA */
 .footer-col {
     /* Dá um respiro entre as colunas */
-    margin-right: 20px; 
+    margin-right: 10%; 
+    margin-left: 10%; 
     
     /* Garante que o texto se alinhe à esquerda dentro da coluna */
     text-align: left; 
