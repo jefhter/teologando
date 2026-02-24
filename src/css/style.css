@@ -103,7 +103,7 @@ a:hover {
     margin-left: 60px;
 }
 
-section article h3 a{
+section article h3 a:not([id]){
     background-color: var(--color-text-dark);
     color:var(--color-background-light);
     padding: 5px 10px;
