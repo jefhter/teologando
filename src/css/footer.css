@@ -45,7 +45,7 @@ footer {
 }
 
 /* 4. Destaque do Teologando (mantido) */
-footer h3:not([data-tipo="comum"]) {
+footer h3 {
     display: inline-block;
     background-color: var(--color-background-light);
     color: var(--color-text-dark);
