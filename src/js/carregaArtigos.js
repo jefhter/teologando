@@ -35,9 +35,11 @@
 
 
 const params = new URLSearchParams(window.location.search);
-const content = params.get("content");
+const content = params.get("data-content");
 
-function loadArticle(elementId, filePath, article=content){
+console.log(content);
+
+function loadArticle(elementId, filePath){
     fetch(filePath)
         .then(response => {
             if (!response.ok) {
