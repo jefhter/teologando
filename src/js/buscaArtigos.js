@@ -24,6 +24,8 @@ async function baixarBuffersDrive() {
 
             let caminhoCompleto = ``;
 
+            let ultimoEncontrado = false;
+
             do {
                 const res = await drive.files.list({
                     q: `'${FOLDER_ID}' in parents and mimeType = 'application/vnd.google-apps.document' and trashed = false`,
@@ -59,9 +61,10 @@ async function baixarBuffersDrive() {
                 caminhoCompleto = path.join(PASTA_DESTINO, arquivo.name);
                 fs.writeFileSync(caminhoCompleto, Buffer.from(response.data));
 
-                if(arquivo.id = arquivos[0].id ){
+                if(arquivo.id = arquivos[0].id && !ultimoEncontrado){
                     caminhoCompleto = path.join(PASTA_DESTINO, `ultimo`);
                     fs.writeFileSync(caminhoCompleto, Buffer.from(response.data));
+                    ultimoEncontrado = true;
                 }
             } 
         }
