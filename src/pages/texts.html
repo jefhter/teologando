@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teologando - Textos</title>
-    <style></style>
+    <title>Teologando - Textos Publicados</title>
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/footer.css"> 
+    <link rel="stylesheet" href="../css/header.css"> 
 </head>
 <body>
     <!--- modularizado  --->
-    <header></header>
+    <header id="header-placeholder"></header>
 
-    <section class="latest-post section-padding">
-            <h2>Confira o Último Artigo Publicado</h2>
-            
-            <article class="post-highlight-card">
-                <h3 class="post-title">O Paradoxo da Linguagem na Experiência Mística</h3>
-                <p class="post-date">Publicado em: 15 de Setembro de 2025</p>
-                <p class="post-excerpt">
-                    Exploramos a dificuldade inerente de usar a linguagem humana para descrever o Divino e como o silêncio se torna a prática correta.
-                </p>
-                <a href="src/articles/o-paradoxo-linguagem.html" class="read-full-post">Ler Artigo Completo →</a>
-            </article>
-            
-            <p class="all-posts-link"><a href="src/pages/texts.html">Ver todos os Textos</a></p>
+    <main>
+        <section id="lista-artigos" class="artigos-grid">
+            <p class="loading">Carregando artigos...</p>
         </section>
+    </main>
 
     <!--- modularizado  --->
-    <footer></footer>
+    <footer id="footer-placeholder"></footer>
+    <script type="module" src="./src/js/loadModules.js"></script>
+    <script src="../js/carregaArtigos.js"></script>
 </body>
 </html>
