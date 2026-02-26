@@ -1,12 +1,7 @@
-// document.addEventListener('submit', () => {
-//     const valor = document.getElementsByName('content').value;
-//     localStorage.setItem('dadosPost', valor);
-// });
-
 const form = document.querySelector('form');
 
 form.addEventListener('submit', () => {    
     const content = new URLSearchParams(new FormData(form)).get("content");
-    localStorage.setItem('dadosPost', content);
+    localStorage.setItem('dados', content);
     console.log("Capturado via POST:", content);
 });

@@ -1,25 +1,20 @@
-// const content = localStorage.getItem('content');
 
-// document.addEventListener('submit', () => {
-//     const content = document.getElementsByName('content').value;
-//     localStorage.setItem('dadosPost', content);
-// });
+// SE O GITHUB-PAGES PERMITISSE USAR 
+// METODO POST:
 
-// const params = new URLSearchParams(window.location.search);
-// const content = params.get("content");
-
+// EM UM LISTENER.JS
 // const form = document.querySelector('form');
-
-// form.addEventListener('submit', () => {
-//     // const valor = document.getElementsByName('content').value;
-//     // localStorage.setItem('dadosPost', valor);
-
-    
-//     const content = new FormData(meuForm).get("content");
-//     console.log("Capturado via POST:", content);
+// form.addEventListener('submit', () => {    
+//     const content = new URLSearchParams(new FormData(form)).get("content");
+//     localStorage.setItem('dados', content);
 // });
 
-const content = localStorage.getItem('dadosPost');
+// AQUI
+// const content = localStorage.getItem('dados', content);
+// ...
+
+const params = new URLSearchParams(window.location.search);
+const content = params.get("content");
 
 console.log(content);
 
