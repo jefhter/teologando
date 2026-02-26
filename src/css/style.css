@@ -1,36 +1,31 @@
-/* VARIÁVEIS DO PROJETO */
 :root {
     --color-background-light: #f1e9d5; /* Fundo/Creme/Papel */
-    --color-text-dark: #4e3629;       /* Marrom-Escuro (Tinta) */
-    --color-accent: #6f4c3d;          /* Tom de destaque para links */
+    --color-text-dark: #4e3629;       /* Marrom-Escuro */
+    --color-accent: #6f4c3d;          /* Tom para links */
 }
 
-/* 1. RESET BÁSICO */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. ESTILOS GLOBAIS DO CORPO */
 body {
     background-color: var(--color-background-light);
     color: var(--color-text-dark);
-    font-family: 'Lato', sans-serif; /* Fonte limpa para leitura */
+    font-family: 'Lato', sans-serif; 
     line-height: 1.6; 
     font-size: 1.1rem;
 }
 
-/* 3. TIPOGRAFIA E TÍTULOS (Estilo Editorial) */
 h1, h2, h3 {
-    font-family: 'Georgia', serif; /* Fonte com serifa para toque clássico */
+    font-family: 'Georgia', serif; 
     color: var(--color-text-dark);
     line-height: 1.2;
     margin-bottom: 0.5em;
     font-weight: bold;
 }
 
-/* 4. LAYOUT PRINCIPAL E LINKS */
 .container {
     max-width: 1000px;
     width: 90%;
@@ -53,9 +48,6 @@ a:hover {
     padding: 30px;
 }   
 
-/* src/css/style.css (Adicionar ao final) */
-
-/* Estilização para a grade de resumo (Ortodoxia e Ortopraxia) */
 .summary-cards-grid {
     display: flex;
     justify-content: space-between;
@@ -64,11 +56,11 @@ a:hover {
 }
 
 .summary-card {
-    flex: 1; /* Permite que os cards cresçam igualmente */
+    flex: 1; 
     padding: 30px;
     border: 1px solid var(--color-light-gray);
     border-radius: 8px;
-    background-color: var(--color-background-light); /* Fundo creme */
+    background-color: var(--color-background-light); 
 }
 .summary-card h3 {
     color: var(--color-text-dark);
@@ -77,14 +69,13 @@ a:hover {
 }
 .summary-card a {
     font-weight: bold;
-    color: var(--color-accent); /* Cor de destaque */
+    color: var(--color-accent); 
 }
 
-/* Estilo para o Destaque do Último Post */
 .post-highlight-card {
-    border-left: 5px solid var(--color-accent); /* Linha vertical de destaque */
+    border-left: 5px solid var(--color-accent); 
     padding: 20px 20px 20px 30px;
-    background-color: var(--color-light-gray); /* Fundo cinza claro sutil */
+    background-color: var(--color-light-gray); 
     border-radius: 0 8px 8px 0;
 }
 .post-excerpt {
