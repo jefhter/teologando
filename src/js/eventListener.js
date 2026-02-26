@@ -6,7 +6,7 @@
 const form = document.querySelector('form');
 
 form.addEventListener('submit', () => {    
-    const content = new FormData(form).get("content");
+    const content = new URLSearchParams(new FormData(form)).get("content");
     localStorage.setItem('dadosPost', content);
     console.log("Capturado via POST:", content);
 });
