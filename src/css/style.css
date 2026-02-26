@@ -103,15 +103,40 @@ a:hover {
     margin-left: 60px;
 }
 
-section article h3 a{
+button{
     background-color: var(--color-text-dark);
-    color:var(--color-background-light);
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-bottom: 10px;
+    color: var(--color-accent);
+    border: none;
+    padding: 6px 14px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+}
+
+button {
+    color: var(--color-background-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    color: var(--color-accent);
     text-decoration: none;
 }
 
-a.red-more {
-    text-decoration: underline;
+button.link-artigo {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 18px;
+  color: var(--color-accent);
+  text-align: left;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.link-artigo:hover {
+  opacity: 0.7;
 }

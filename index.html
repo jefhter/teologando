@@ -27,8 +27,10 @@
             <article class="post-highlight-card">
                 <!--- modularizado  --->
                 <div id="article-placeholder"></div>
-            
-                <h3 class="all-posts-link"><a href="https://jefhter.github.io/teologando/src/pages/articles.html">Veja mais aqui</a></h3>
+
+                <form action="https://jefhter.github.io/teologando/src/pages/articles.html" method="post">
+                    <button type="submit" class="all-posts-link">Veja mais aqui</button>
+                </form>
             </article>
         </section>
 
@@ -38,13 +40,21 @@
                 <article class="summary-card">
                     <h3>Ortodoxia</h3>
                     <p>O foco na pureza da doutrina e nos ensinamentos bíblicos e históricos. O que cremos define o que somos.</p>
-                    <a href="src/pages/view.html" class="read-more" data-content="ORTODOXIA">O que é Ortodoxia? →</a>
+                    
+                    <form id="form" action="./src/pages/view.html" method="post">
+                        <input type="hidden" name="content" value="ORTODOXIA"></input>
+                        <button type="submit" class="link-artigo">O que é Ortodoxia? →</button>
+                    </form>
                 </article>
 
                 <article class="summary-card">
                     <h3>Ortopraxia</h3>
                     <p>A aplicação prática da fé na vida diária. O que praticamos reflete o que cremos.</p>
-                    <a href="src/pages/view.html" class="read-more" data-content="ORTOPRAXIA">O que é Ortopraxia? →</a>
+
+                    <form id="form" action="./src/pages/view.html" method="post">
+                        <input type="hidden" name="content" value="ORTOPRAXIA"></input>
+                        <button type="submit" class="link-artigo">O que é Ortopraxia? →</button>
+                    </form>
                 </article>
             </div>
         </section>
@@ -55,5 +65,6 @@
     <!--- modularizado  --->
     <div id="footer-placeholder"></div>
     <script type="module" src="./src/js/loadModules.js"></script>
+    <script type="module" src="./src/js/eventListener.js"></script>
 </body>
 </html>
