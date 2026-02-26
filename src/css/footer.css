@@ -2,7 +2,8 @@
 footer {
     background-color: var(--color-text-dark); 
     color: var(--color-background-light); 
-    padding: 40px 0;
+    padding: 2%;
+    margin: 0 3%;
     font-size: 0.9em;
 }
 

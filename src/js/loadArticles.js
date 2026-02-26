@@ -1,4 +1,3 @@
-
 // SE O GITHUB-PAGES PERMITISSE USAR 
 // METODO POST:
 
@@ -15,8 +14,6 @@
 
 const params = new URLSearchParams(window.location.search);
 const content = params.get("content");
-
-console.log(content);
 
 function loadArticle(elementId, filePath){
     fetch(filePath)

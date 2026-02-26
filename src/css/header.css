@@ -7,7 +7,8 @@
 header {
     background-color: #f1e9d5; /* Cor clara do seu projeto */
     border-bottom: 1px solid #4e3629; /* Linha sutil para separar do corpo */
-    padding: 15px 20px;
+    padding: 2%;
+    margin: 0 3%;
 }
 
 .header-content {
