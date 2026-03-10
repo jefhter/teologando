@@ -7,7 +7,9 @@ function loadJson(filePath){
         dados.artigos.forEach(artigo => {
         const li = document.createElement('li');
         
-        li.textContent = `${artigo.name} - ${artigo.modifiedTime}`;
+        let data = new Date(artigo.modifiedTime).toLocaleDateString('pt-BR')
+
+        li.textContent = `${artigo.name} - ${data}`;
         
         container.appendChild(li);
         });
