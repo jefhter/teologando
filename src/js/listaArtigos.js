@@ -16,5 +16,5 @@ function loadJson(filePath){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadJson('artigos.json');
+    loadJson('./artigos.json');
 });
