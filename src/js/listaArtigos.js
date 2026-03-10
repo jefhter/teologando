@@ -5,19 +5,25 @@ function loadJson(filePath) {
         return response.json();
     })
     .then(dados => {
-        const container = document.getElementById('lista-artigos');
+        const container = document.getElementById('tabela-artigos');
         if (!container) return console.error("Elemento 'lista-artigos' não encontrado no HTML");
 
         const lista = dados.artigos || dados;
 
         if (Array.isArray(lista)) {
             lista.forEach(artigo => {
-                const li = document.createElement('li');
+                const tr = document.createElement('tr');
+                const tdNome = document.createElement('td');
+                const tdData = document.createElement('td');
                 
                 let data = new Date(artigo.modifiedTime).toLocaleDateString('pt-BR');
 
-                li.textContent = `${artigo.name} - ${data}`;
-                container.appendChild(li);
+                tdNome.textContent = `${artigo.name}`;
+                tdData.textContent = `${data}`;
+
+                tr.appendChild(tdNome);
+                tr.appendChild(tdData);
+                container.appendChild(tr);
             });
         } else {
             console.error("O formato do JSON não é um array reconhecível.");
