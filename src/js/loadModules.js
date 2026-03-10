@@ -23,7 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadComponent('header-placeholder', 'https://jefhter.github.io/teologando//src/components/header.html');
     loadComponent('footer-placeholder', 'https://jefhter.github.io/teologando//src/components/footer.html');
     loadComponent('article-placeholder', 'https://jefhter.github.io/teologando//src/components/ultimo.html');
-    // loadComponent('style-header', '');
-    // loadComponent('style-footer', '');
 });
 
