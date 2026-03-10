@@ -9,6 +9,8 @@ const SCOPES = ['https://www.googleapis.com/auth/drive.readonly'];
 const FOLDER_ID = process.env.GOOGLE_FOLDER_ID;
 const PASTA_DESTINO = path.join(__dirname, '../assets/docs/')
 
+let jsonArquivos;
+
 // Autenticação
 const auth = new google.auth.GoogleAuth({
     keyFile: KEY_FILE_PATH,
@@ -67,11 +69,16 @@ async function baixarBuffersDrive() {
                     ultimoEncontrado = true;
                 }
             } 
+
+            jsonArquivos = JSON.stringify(arquivos, ["name","modifiedTime"], 2);
+            fs.writeFileSync('artigos.json', jsonArquivos);
         }
 
         catch (error) {
             console.error('Erro na operação:', error.message);
         }
 }
+
+baixarBuffersDrive();
 
 module.exports = { baixarBuffersDrive };
