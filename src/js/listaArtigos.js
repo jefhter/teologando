@@ -16,7 +16,7 @@ function loadJson(filePath) {
                 const form = document.createElement('form');
                 const input = document.createElement('input');
                 const button = document.createElement('button');
-                const tdNome = document.createElement('td');
+                const tdForm = document.createElement('td');
                 const tdData = document.createElement('td');
                 
                 let data = new Date(artigo.modifiedTime).toLocaleDateString('pt-BR');
@@ -33,15 +33,17 @@ function loadJson(filePath) {
                 button.class="link-artigo";
                 button.textContent= `${artigo.name}`;
 
-                tdNome.textContent = `${artigo.name}`;
+                //tdNome.textContent = `${artigo.name}`;
                 tdData.textContent = `${data}`;
 
                 form.appendChild(input);
                 form.appendChild(button);
-                tr.appendChild(form);
-                //tr.appendChild(tdNome);
-                tr.appendChild(tdData);
+                tdForm.appendChild(form);
                 
+                //tr.appendChild(tdNome);
+                tr.appendChild(tdForm);
+                tr.appendChild(tdData);
+
                 container.appendChild(tr);
             });
         } else {
