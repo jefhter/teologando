@@ -13,16 +13,35 @@ function loadJson(filePath) {
         if (Array.isArray(lista)) {
             lista.forEach(artigo => {
                 const tr = document.createElement('tr');
+                const form = document.createElement('form');
+                const input = document.createElement('input');
+                const button = document.createElement('button');
                 const tdNome = document.createElement('td');
                 const tdData = document.createElement('td');
                 
                 let data = new Date(artigo.modifiedTime).toLocaleDateString('pt-BR');
 
+                form.id = 'form';
+                form.action = "https://jefhter.github.io/teologando/src/pages/view.html";
+                form.method = 'get';
+
+                input.type = "hidden";
+                input.name="content"; 
+                input.value= `${artigo.name}`;
+
+                button.type="submit"; 
+                button.class="link-artigo";
+                button.textContent= `${artigo.name}`;
+
                 tdNome.textContent = `${artigo.name}`;
                 tdData.textContent = `${data}`;
 
-                tr.appendChild(tdNome);
+                form.appendChild(input);
+                form.appendChild(button);
+                tr.appendChild(form);
+                //tr.appendChild(tdNome);
                 tr.appendChild(tdData);
+                
                 container.appendChild(tr);
             });
         } else {
