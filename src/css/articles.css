@@ -14,7 +14,7 @@ tr {
 button.links-artigo {
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 25px;
   color: var(--color-accent);
   text-align: left;
   cursor: pointer;
