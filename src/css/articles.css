@@ -8,7 +8,23 @@ main {
 }
 
 tr {
-    padding: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
+button.links-artigo {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: var(--color-accent);
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 10px 0px 10px;
+}
+
+button.links-artigo:hover {
+  opacity: 0.7;
+}
+
+td.data {
+    text-align: right;
+}

@@ -32,6 +32,8 @@ function loadJson(filePath) {
                 button.type="submit"; 
                 button.className="link-artigo";
                 button.textContent= `${artigo.name}`;
+
+                tdData.className = 'data';
                 tdData.textContent = `${data}`;
 
                 form.appendChild(input);
