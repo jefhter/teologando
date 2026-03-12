@@ -21,7 +21,7 @@ function loadJson(filePath) {
                 
                 let data = new Date(artigo.modifiedTime).toLocaleDateString('pt-BR');
 
-                form.id = 'form';
+                form.id = 'formArticles';
                 form.action = "https://jefhter.github.io/teologando/src/pages/view.html";
                 form.method = 'get';
 
@@ -30,17 +30,14 @@ function loadJson(filePath) {
                 input.value= `${artigo.name}`;
 
                 button.type="submit"; 
-                button.class="link-artigo";
+                button.className="link-artigo";
                 button.textContent= `${artigo.name}`;
-
-                //tdNome.textContent = `${artigo.name}`;
                 tdData.textContent = `${data}`;
 
                 form.appendChild(input);
                 form.appendChild(button);
                 tdForm.appendChild(form);
                 
-                //tr.appendChild(tdNome);
                 tr.appendChild(tdForm);
                 tr.appendChild(tdData);
 

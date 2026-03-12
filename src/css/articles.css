@@ -6,3 +6,9 @@ main {
 #tabela-artigos {
     width: 100%;
 }
+
+tr {
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
