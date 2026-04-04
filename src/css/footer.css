@@ -12,17 +12,7 @@ footer {
 }
 
 .footer-container {
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-col {
-    margin-right: 10%; 
-    margin-left: 10%; 
+    margin: 0 10%;
+    padding: 0 5%;
     text-align: center; 
-}
-
-.footer-copyright {
-    text-align: center;
-    margin: 10px;
 }
