@@ -1,4 +1,14 @@
+body {
+    display: flex;
+}
+
 main {
     margin: 0% 5%;
     padding: 10% 20%;
+}
+
+.nav {
+    margin: 2% 4%;
+    display: flex;
+    justify-content: space-between;
 }
