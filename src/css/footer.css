@@ -19,8 +19,7 @@ footer {
 .footer-col {
     margin-right: 10%; 
     margin-left: 10%; 
-    text-align: left; 
-    flex-grow: 1; 
+    text-align: center; 
 }
 
 .footer-copyright {
