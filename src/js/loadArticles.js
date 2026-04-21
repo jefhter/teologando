@@ -1,5 +1,7 @@
 import { Artigo } from './models/Article.js';
 
+const storage = localStorage;
+
 function novoArtigo() {
     const titulo = document.getElementById('inputTitulo').value;
     const conteudo = document.getElementById('inputConteudo').value;
@@ -15,14 +17,22 @@ function novoArtigo() {
 
 function buscaArtigo(titulo) {
     const artigo = localStorage.getItem(titulo);
-    console.log(artigo);
+    const display = document.getElementById('article-placeholder');
+
+    if (artigo) {
+        display.innerHTML = `<h3>${titulo}</h3><p>${artigo}</p>`;
+    } else {
+        display.innerHTML = "Artigo não encontrado.";
+    }
 }
 
-function removeArtigo(titulo) {
+function removeArtigo() {
     const titulo = document.getElementById('inputTitulo').value;
     localStorage.removeItem(titulo);
     alert('Artigo removido!');
 }
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const salvar = document.getElementById('btnSalvar');

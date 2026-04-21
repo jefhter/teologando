@@ -1,5 +1,5 @@
 export class Artigo {
-  constructor(titulo, conteudo, data) {
+  constructor(titulo, conteudo) {
     this.titulo = titulo;
     this.conteudo = conteudo;
   }

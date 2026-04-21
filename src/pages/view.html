@@ -22,18 +22,10 @@
 
     <div class="nav">
         <div class="go-back">
-            <form id="form" action="https://jefhter.github.io/teologando/src/pages/view.html" method="get">
-                <input type="hidden" name="content" value="ORTODOXIA"></input>
-                <button type="submit" class="link-artigo">← Anterior</button>
-            </form>
+            <button id="back" type="submit" class="link-artigo">← Anterior</button>
         </div>
         <div class="go-next">
-            <div class="go-back">
-            <form id="form" action="https://jefhter.github.io/teologando/src/pages/view.html" method="get">
-                <input type="hidden" name="content" value="ORTODOXIA"></input>
-                <button type="submit" class="link-artigo"> Próximo →</button>
-            </form>
-        </div>
+            <button id="next" type="submit" class="link-artigo"> Próximo →</button>
         </div>
     </div>
 
@@ -41,5 +33,6 @@
     <div id="footer-placeholder"></div>
     <script type="module" src="../js/loadModules.js"></script>
     <script src="../js/loadArticles.js"></script>
+    <script src="../js/switchArticles.js"></script>
 </body>
 </html>
