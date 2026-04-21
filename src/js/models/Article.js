@@ -2,6 +2,5 @@ export class Artigo {
   constructor(titulo, conteudo, data) {
     this.titulo = titulo;
     this.conteudo = conteudo;
-    this.data = new Date(data).toLocaleDateString('pt-BR');
   }
 }
