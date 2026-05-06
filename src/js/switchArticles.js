@@ -11,10 +11,11 @@ function goNext(){
         novaUrl = `${window.location.pathname}?${params.toString()}`;
         window.history.replaceState({}, '', novaUrl);
         window.location.reload();
-    }else{
+    }  
+    else{
+        next.innerHTML = `<button id="next" type="submit" class="link-artigo"></button>`;
         console.log('Você está no ultimo Artigo.');
-    }
-
+    }    
 }
 
 function goBack(){   
@@ -31,6 +32,7 @@ function goBack(){
         window.history.replaceState({}, '', novaUrl);
         window.location.reload();
     }else{
+        back.innerHTML = `<button id="back" type="submit" class="link-artigo"></button>`;
         console.log('Você está no primeiro Artigo.');
     }
 }
