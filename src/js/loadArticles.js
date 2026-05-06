@@ -39,4 +39,3 @@ function loadArticle(elementId, filePath){
 document.addEventListener('DOMContentLoaded', () => {
     loadArticle('article-placeholder', `https://jefhter.github.io/teologando//src/assets/articles/${content}.html`);
 });
-

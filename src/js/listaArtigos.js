@@ -9,6 +9,7 @@ function loadJson(filePath) {
         if (!container) return console.error("Elemento 'lista-artigos' não encontrado no HTML");
 
         const lista = dados.artigos || dados;
+        var array = new Array;
 
         if (Array.isArray(lista)) {
             lista.forEach(artigo => {
@@ -45,6 +46,16 @@ function loadJson(filePath) {
 
                 container.appendChild(tr);
             });
+
+            for(let d=0; d<dados.length;d++) {
+                array.push(dados[d].name)
+            }
+
+            localStorage.clear()
+
+            for(let i=0; i<array.length;i++) {
+                localStorage.setItem(i, array[i])
+            }
         } else {
             console.error("O formato do JSON não é um array reconhecível.");
         }
