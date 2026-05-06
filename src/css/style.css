@@ -59,8 +59,8 @@ a:hover {
 .summary-cards-grid {
     display: flex;
     justify-content: space-between;
-    gap: 30px; /* Espaço entre os cards */
-    margin-bottom: 40px;
+    gap: 30px;
+    padding: 4%;
 }
 
 .summary-card {
@@ -92,7 +92,7 @@ a:hover {
 }
 .all-posts-link {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px;
     font-weight: bold;
     display: flex;
     box-sizing: border-box;
@@ -138,4 +138,11 @@ button.link-artigo {
 
 button.link-artigo:hover {
   opacity: 0.7;
+}
+
+form.more-posts {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
