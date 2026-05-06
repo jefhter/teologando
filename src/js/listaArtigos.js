@@ -47,15 +47,12 @@ function loadJson(filePath) {
                 container.appendChild(tr);
             });
 
-            for(let d=0; d<dados.length;d++) {
+            for(let d=dados.length-1; d>=0;d--) {
                 array.push(dados[d].name)
             }
 
-            localStorage.clear()
-
-            for(let i=0; i<array.length;i++) {
-                localStorage.setItem(i, array[i])
-            }
+            localStorage.clear();
+            localStorage.setItem('titulos', JSON.stringify(array));
         } else {
             console.error("O formato do JSON não é um array reconhecível.");
         }
