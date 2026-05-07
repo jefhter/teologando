@@ -9,6 +9,7 @@
     html, body {
         overflow-x: hidden;
         width: 100%;
+        height: auto;
     }
 
     h1.welcome-title {
@@ -73,6 +74,8 @@ body {
     font-family: 'Lato', sans-serif; 
     line-height: 1.6; 
     font-size: 1.1rem;
+    min-height: 700px;
+    min-width: 445px;
 }
 
 h1, h2, h3 {

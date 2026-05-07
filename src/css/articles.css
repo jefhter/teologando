@@ -1,6 +1,7 @@
 main {
     margin: 0% 5%;
     padding: 10% 20%;
+    min-height: 700px;
 }
 
 #tabela-artigos {
