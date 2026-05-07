@@ -74,6 +74,11 @@ body {
     font-family: 'Lato', sans-serif; 
     line-height: 1.6; 
     font-size: 1.1rem;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
 }
 
 h1, h2, h3 {
