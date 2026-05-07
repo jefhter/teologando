@@ -4,6 +4,63 @@
     --color-accent: #6f4c3d;          /* Tom para links */
 }
 
+
+@media (max-width: 768px) { 
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    h1.welcome-title {
+        font-size: 8vw; 
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        text-align: center;
+        line-height: 1.1;
+        margin-top: 20px;
+    }
+
+    h2.indicador-ultimo-post {
+        font-size: 28px; 
+    }
+
+    .latest-post.section-padding {
+        margin-left: 0; 
+        padding: 20px;
+    }
+
+    .summary-cards-grid {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .summary-card {
+        width: 100%;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 12px;
+        white-space: normal;
+        height: auto;
+    }
+
+    .container, .welcome-section, .latest-post.section-padding {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
