@@ -1,0 +1,135 @@
+:root {
+    --color-background-light: #f1e9d5; 
+    --color-text-dark: #4e3629;       
+    --color-accent: #6f4c3d;         
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 20px;
+}
+
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(78, 54, 41, 0.12);
+    width: 100%;
+    max-width: 420px; /* Um pouco mais largo para acomodar melhor os campos */
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h1 {
+    font-family: 'Georgia', serif;
+    color: var(--color-accent);
+    font-size: 2.2rem;
+}
+
+.form-instruction {
+    text-align: center;
+    color: var(--color-text-dark);
+    opacity: 0.7;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--color-text-dark);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #dcd3bd;
+    border-radius: 8px;
+    background-color: #fffefb;
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+select {
+    cursor: pointer;
+    appearance: none; /* Remove a seta padrão do navegador */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236f4c3d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(111, 76, 61, 0.08);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--color-text-dark);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-footer a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}

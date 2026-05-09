@@ -6,23 +6,48 @@
     <title>TEO - Cadastro</title>
     <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
     <link rel="stylesheet" href="../css/style.css"> 
-    <link rel="stylesheet" href="..css/style/signupcss">
+    <link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
-    <main>
-        <section id="signup" class="signup-grid">
-            <form action="" method="get">
-                <input type="text" name="nome" id="nome-input">
-                <input type="email" name="email" id="email-input">
-                <input type="text" name="usuario" id="user-input">
-                <input type="password" name="senha" id="pass-input">
-                <label for="user">Qual a seu tipo de uso?</label>
-                <select id="user-type" name="user-type">
-                    <option value="writer">Escritor</option>
-                    <option value="reader">Leitor</option>
-                </select>
-                <button type="button">Cadastrar</button>
+    <main class="login-wrapper">
+        <section id="signup" class="login-card">
+            <header class="login-header">
+                <h1>Teologando</h1>
+            </header>
+
+            <form action="#" method="POST">
+                <p class="form-instruction">Crie sua conta para começar</p>
+
+                <div class="input-group">
+                    <input type="text" name="nome" id="nome-input" required placeholder="Nome completo">
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" id="email-input" required placeholder="E-mail">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="usuario" id="user-input" required placeholder="Nome de usuário">
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="senha" id="pass-input" required placeholder="Senha">
+                </div>
+
+                <div class="input-group">
+                    <label for="user-type">Qual o seu tipo de uso?</label>
+                    <select id="user-type" name="user-type">
+                        <option value="writer">Escritor</option>
+                        <option value="reader">Leitor</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-cadastrar">Cadastrar</button>
             </form>
+
+            <footer class="login-footer">
+                <a href="https://jefhter.github.io/teologando/">Já tenho uma conta</a>
+            </footer>
         </section>
     </main>
     
