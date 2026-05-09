@@ -6,16 +6,33 @@
     <title>TEO - Login</title>
     <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
     <link rel="stylesheet" href="../css/style.css"> 
-    <link rel="stylesheet" href="..css/style/login.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <main>
-        <section id="login" class="login-grid">
-            <form action="" method="get">
-                <input type="text" name="usuario" id="user-input">
-                <input type="password" name="senha" id="pass-input">
-                <button type="button">Entrar</button>
+    <main class="login-wrapper">
+        <section id="login" class="login-card">
+            <header class="login-header">
+                <h1>Teologando</h1>
+            </header>
+
+            <form action="#" method="POST"> 
+                <p>Entre com Login e Senha para continuar</p>
+                <div class="input-group">
+                    <input type="text" name="usuario" id="user-input" required placeholder="Digite seu usuário">
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="senha" id="pass-input" required placeholder="••••••••">
+                </div>
+
+                <button type="submit" id="btn-entrar">Entrar</button>
             </form>
+
+            <footer class="login-footer">
+                <a href="#">Não sou cadastrado</a>
+                 </br>
+                <a href="#">Esqueci minha senha</a>
+            </footer>
         </section>
     </main>
     

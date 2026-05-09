@@ -1,0 +1,117 @@
+:root {
+    --color-background-light: #f1e9d5; 
+    --color-text-dark: #4e3629;       
+    --color-accent: #6f4c3d;         
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    padding: 20px;
+}
+
+.login-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(78, 54, 41, 0.15);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    text-align: center;
+    margin: auto;
+}
+
+.login-header h1 {
+    font-family: 'Georgia', serif;
+    color: var(--color-accent);
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+form p {
+    color: var(--color-text-dark);
+    opacity: 0.8;
+    margin: 3% 0;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #dcd3bd;
+    border-radius: 8px;
+    background-color: #fffefb;
+    color: var(--color-text-dark);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 4px rgba(111, 76, 61, 0.1);
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: var(--color-text-dark);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.login-footer {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.login-footer a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
