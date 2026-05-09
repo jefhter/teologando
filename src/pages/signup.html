@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEO - Cadastro</title>
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="..css/style/signupcss">
+</head>
+<body>
+    <main>
+        <section id="signup" class="signup-grid">
+            <form action="" method="get">
+                <input type="text" name="nome" id="nome-input">
+                <input type="email" name="email" id="email-input">
+                <input type="text" name="usuario" id="user-input">
+                <input type="password" name="senha" id="pass-input">
+                <label for="user">Qual a seu tipo de uso?</label>
+                <select id="user-type" name="user-type">
+                    <option value="admin">Administrador</option>
+                    <option value="writer">Escritor</option>
+                    <option value="reader">Leitor</option>
+                </select>
+                <button type="button">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <script type="module" src="../js/signup.js"></script>
+</body>
+</html>
