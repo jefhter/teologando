@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEO - Admin</title>
+    <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+    <main class="login-wrapper">
+        <section id="signup" class="login-card">
+            <header class="login-header">
+                <h1>Administrador</h1>
+            </header>
+
+            <form>
+                <p class="form-instruction">Cadastre novos usuários.</p>
+
+                <div class="input-group">
+                    <input type="text" name="nome" id="nome-input" required placeholder="Nome completo">
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" id="email-input" required placeholder="E-mail">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="usuario" id="user-input" required placeholder="Nome de usuário">
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="senha" id="pass-input" required placeholder="Senha">
+                </div>
+
+                <div class="input-group">
+                    <label for="user-type">Tipo de usuário</label>
+                    <select id="user-type" name="user-type">
+                        <option value="writer">Escritor</option>
+                        <option value="reader">Leitor</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-cadastrar">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <script type="module" src="../js/signup.js"></script>
+</body>
+</html>
