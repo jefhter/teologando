@@ -11,19 +11,15 @@
         height: auto;
     }
 
-    h1.welcome-title {
-        font-size: 8vw; 
+    h1 {
+        font-size: 6vw; 
         word-wrap: break-word;
         overflow-wrap: break-word;
         text-align: center;
         line-height: 1.1;
         margin-top: 20px;
     }
-
-    h2.indicador-ultimo-post {
-        font-size: 28px; 
-    }
-
+    
     .latest-post.section-padding {
         margin-left: 0; 
         padding: 20px;
