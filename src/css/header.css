@@ -8,6 +8,10 @@
     .header-content h1{
         font-size: 6vw; 
     }
+
+    h1 {
+        font-size: 8vw;
+    }
 }
 
 header {
