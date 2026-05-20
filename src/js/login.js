@@ -11,5 +11,6 @@ form.addEventListener('submit', (e) => {
 
     if(dadosInformados['usuario']==usuarios[0]['user'] && dadosInformados['senha']==usuarios[0]['pass']){
         console.log('acesso liberado');
+        window.location.href = "https://jefhter.github.io/teologando/src/pages/home.html";
     }
 });

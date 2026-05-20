@@ -11,5 +11,7 @@ form.addEventListener('submit', (e) => {
     if(dadosInformados['usuario']==usuarios[0]['user']){
         console.log('Usuário duplicado.');
         return 0;
+    }else{
+        window.location.href = "https://jefhter.github.io/teologando/";
     }
 });
