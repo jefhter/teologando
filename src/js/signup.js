@@ -3,7 +3,13 @@ const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const dados = new FormData(form);
+    const dadosInformados = Object.fromEntries(new FormData(form));
+    const usuarios = JSON.parse(localStorage.getItem('usuarios'));
     
-    console.log("DADOS...", Object.fromEntries(dados));
+    console.log("iNFORMADOS...", dadosInformados);
+
+    if(dadosInformados['usuario']==usuarios[0]['user']){
+        console.log('Usuário duplicado.');
+        return 0;
+    }
 });
